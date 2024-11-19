@@ -1,4 +1,3 @@
-
 -- BASE DE DATOS FINAL CAMARA_ANECOICA-V2
 -- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -83,7 +82,7 @@ CREATE TABLE IF NOT EXISTS datos_medicion_principal (
     fecha_hora DATETIME,
     responsable_medicion VARCHAR(50),
     id_variables INT,
-    identificador VARCHAR(255) UNIQUE, 
+    identificador VARCHAR(255), 
     id_start_stop INT,
     PRIMARY KEY (id_datos_medicion),
     FOREIGN KEY (identificador) REFERENCES mediciones(identificador),
